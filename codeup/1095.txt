@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main()
+{
+    int a,b,d, min;
+       int C[10001]={};
+    scanf("%d",&a);
+    for(b=0; b<a; b++)
+    {
+        scanf("%d",&C[b]);
+    }
+    for(d=0; d<a; d++)
+    {
+        if(min>=C[d]) min=C[d];
+    }
+    printf("%d",min);
+    return 0;
+}
