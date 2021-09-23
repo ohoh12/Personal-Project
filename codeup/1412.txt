@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+  char arr[100];
+  int count[26] = { 0, };
+  gets(arr);
+  
+  for(int i = 0; arr[i] != '\0'; i++){
+  	if(arr[i] != ' '){
+	  count[arr[i] - 97]++;
+    }
+  }
+  for(int i = 0; i < 26; i++){
+  	printf("%c:%d\n", i + 97, count[i]);
+  }
+  
+}
