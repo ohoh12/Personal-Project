@@ -1,0 +1,34 @@
+
+#include<stdio.h>
+ 
+ 
+int main(){
+    
+ 
+        
+    int Arr_Card[50] = {};
+    int i_CardNum;
+    
+    scanf("%d",&i_CardNum);
+    
+    for(int i = 0; i<i_CardNum; i++){
+        Arr_Card[i] = i+1;
+    }
+    
+    int i_LoseCardNum;
+    for(int j = 0; j<i_CardNum - 1; j++){
+        scanf("%d",&i_LoseCardNum);
+        Arr_Card[i_LoseCardNum-1] = 0;
+    }
+    
+    for(int k = 0; k<i_CardNum; k++){
+        if(Arr_Card[k] != 0){
+            printf("%d",Arr_Card[k]);
+        }
+    }
+    
+ 
+    return 0;
+    
+ 
+}

@@ -1,0 +1,27 @@
+
+#include<stdio.h>
+ 
+ 
+int main(){
+    
+ 
+        
+    char buf[100001];
+    
+    gets(buf);
+    int r = 0;
+    int l = 0;
+    for (int i = 0; buf[i] != '\0'; i++) {
+        if (buf[i] == '('){
+            r++;
+        }
+        else if(buf[i] == ')'){
+            l++;
+        }
+    }
+    printf("%d %d",r,l);
+    
+ 
+    return 0;
+}
+ 
