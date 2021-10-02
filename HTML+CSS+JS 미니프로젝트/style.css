@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.wrap{
+    color: green;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    text-align: center;
+    transform: translate(-0% -0%);
+}
+.material-icons{
+    font-size: 10rem;
+}
+.lg-text{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.sm-text{
+    font-size: 1.5rem;
+}
+
+#dynamic{
+    position: relative;
+    display: inline-block;
+}
+#dynamic::after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -10px;
+    width: 4px;
+    height: 100%;
+    background-color: green;
+
+}
+#dynamic.active::after{
+    display: none;
+}
