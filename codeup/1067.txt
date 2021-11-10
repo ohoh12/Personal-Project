@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(){
+int a;
+scanf("%d", &a);
+if(a>0){        
+printf("%s", "plus\n");
+if(a%2==0){
+printf("%s","even\n");
+}
+else{
+printf("%s","odd\n");
+}
+}
+if(a<0){
+printf("%s","minus\n");
+if(a%2==0){
+printf("%s","even\n");
+}
+else{
+printf("%s","odd\n");
+}
+}
+return 0;
+}
